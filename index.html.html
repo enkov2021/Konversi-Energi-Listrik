@@ -1228,7 +1228,6 @@
                     <p id="heroDesc">Laboratorium Konversi Energi Listrik adalah pusat penelitian dan pengembangan teknologi energi terbarukan dan efisiensi energi di Fakultas Teknik.</p>
                     <div class="cta">
                         <a href="#profil" class="btn btn-primary">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
-                        <a href="#kontak" class="btn btn-outline">Hubungi Kami</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -1265,12 +1264,9 @@
 
     <!-- ===== PRAKTIKUM ===== -->
     <section class="sec alt" id="praktikum">
-        <div class="container">
-            <div class="sec-head">
                 <h2 id="praktikumTitle">Daftar Praktikum</h2>
                 <p id="praktikumDesc">Daftar mata praktikum yang diselenggarakan di Laboratorium Konversi Energi Listrik.</p>
             </div>
-            <div class="grid g-3" id="praktikumContainer"></div>
         </div>
     </section>
 
@@ -1314,7 +1310,6 @@
                     
                     <h3 style="margin-top:28px;"><i class="fab fa-instagram" style="color:var(--secondary);"></i> Instagram</h3>
                     <div class="social-single">
-                        <a href="#" id="sosmedInstagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -1612,7 +1607,6 @@
                 container.innerHTML = `<p style="text-align:center;grid-column:1/-1;color:var(--muted);">Belum ada data prestasi.</p>`;
                 return;
             }
-            const medals = ['fa-trophy', 'fa-medal', 'fa-award', 'fa-star'];
             container.innerHTML = data.slice(0, 4).map((item, idx) => {
                 const nama = item['Nama Asisten'] || 'Asisten';
                 const foto = item['Foto'] || '';
