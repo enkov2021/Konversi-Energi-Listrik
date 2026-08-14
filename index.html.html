@@ -1313,6 +1313,7 @@
                     
                     <h3 style="margin-top:28px;"><i class="fab fa-instagram" style="color:var(--secondary);"></i> Instagram</h3>
                     <div class="social-single">
+                        <a href="#" id="sosmedInstagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -1610,6 +1611,7 @@
                 container.innerHTML = `<p style="text-align:center;grid-column:1/-1;color:var(--muted);">Belum ada data prestasi.</p>`;
                 return;
             }
+            const medals = ['fa-trophy', 'fa-medal', 'fa-award', 'fa-star'];
             container.innerHTML = data.slice(0, 4).map((item, idx) => {
                 const nama = item['Nama Asisten'] || 'Asisten';
                 const foto = item['Foto'] || '';
